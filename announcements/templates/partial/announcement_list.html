@@ -1,0 +1,19 @@
+{% load static %}
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for announcement in announcements %}
+      <div class="col">
+        <div class="card">
+          <img src="{{ announcement.picture.url }}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-text">{{ announcement.title }}</h3>
+            <p class="card-text">{{ announcement.text }}</p>
+            {% if announcement.price %}
+            <p class="h6">Цена: {{ announcement.price }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+    {% endfor %}
+</div>

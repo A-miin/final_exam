@@ -1,8 +1,10 @@
 from django.urls import path
 
+from announcements.views import IndexView
+
 app_name = 'annoncement'
 
 urlpatterns = [
-    # path('login/', LoginView.as_view(), name='login'),
+    path('', IndexView.as_view(), name='index'),
 
 ]

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}Список всех объявлений{% endblock %}
+{% block content %}
+
+
+    {% if not announcements %}
+        <h2>Нет объявлений</h2>
+    {% else %}
+        {% include "partial/search_form.html" %}
+    {% endif %}
+
+    {% include 'partial/announcement_list.html' with announcements=announcements %}
+    <div class="container d-flex align-content-center flex-wrap my-4">
+        {% if is_paginated %}
+            {% include 'partial/paginate.html' %}
+        {% endif %}
+    </div>
+
+
+{% endblock content %}

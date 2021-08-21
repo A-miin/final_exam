@@ -57,3 +57,8 @@ class IndexView(LoginRequiredMixin, ListView):
             context['query'] = urlencode({'search_value': self.search_data})
 
         return context
+
+class AnnouncementView(DetailView):
+    model = Announcement
+    template_name = 'announcement_detail.html'
+    context_object_name = 'announcement'

@@ -7,11 +7,9 @@
           <img src="{{ announcement.picture.url }}" class="card-img-top" alt="...">
           <div class="card-body">
             <h3 class="card-text">{{ announcement.title }}</h3>
-            <p class="card-text">{{ announcement.text }}</p>
-            {% if announcement.price %}
-            <p class="h6">Цена: {{ announcement.price }}</p>
-            {% endif %}
           </div>
+          <a href="{% url 'annoncement:announcement-detail' announcement.id %}" type="button" class="btn btn-outline-primary ml-0 pl-0 mt-auto pt-auto">Детальный просмотр</a>
+
         </div>
       </div>
 

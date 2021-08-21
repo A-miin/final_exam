@@ -14,7 +14,7 @@ from django.db.models import Q
 from django.views import View
 from django.utils.http import urlencode
 import uuid
-from announcements.form import SearchForm
+from announcements.form import SearchForm, AnnouncementForm
 from announcements.models import Announcement
 
 # Create your views here.
@@ -62,3 +62,16 @@ class AnnouncementView(DetailView):
     model = Announcement
     template_name = 'announcement_detail.html'
     context_object_name = 'announcement'
+
+
+class CreateAnnouncementView(LoginRequiredMixin, CreateView):
+    template_name = 'new_announcements.html'
+    form_class = AnnouncementForm
+    model = Announcement
+
+    def form_valid(self, form):
+        announcement = form.save(commit=False)
+        announcement.author = self.request.user
+        announcement.save()
+
+        return redirect('annoncement:index')

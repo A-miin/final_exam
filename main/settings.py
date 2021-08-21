@@ -89,6 +89,18 @@ DATABASES = {
     }
 }
 
+DATABASES = {
+    'default': {
+        #
+        'ENGINE': 'django.db.backends.postgresql',
+        #
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+        'NAME': 'attractor_db',
+        'USER': 'attractor_user',
+        'PASSWORD': 'attractor_pass',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

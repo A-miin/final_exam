@@ -20,7 +20,22 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-
+Настройте конфигурацию данных PostgreSQL в `main/settings.py`
+либо закомментируйте настройки базы postgres
+```bash
+DATABASES = {
+    'default': {
+        #
+        'ENGINE': 'django.db.backends.postgresql',
+        #
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+        'NAME': 'attractor_db',
+        'USER': 'attractor_user',
+        'PASSWORD': 'attractor_pass',
+    }
+}
+```
 Примените миграции командой
 ```bash
 python manage.py migrate

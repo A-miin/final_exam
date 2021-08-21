@@ -9,3 +9,8 @@ class AnnouncementForm(forms.ModelForm):
     class Meta:
         model = Announcement
         fields = ('title', 'text','picture', 'category', 'price')
+
+class AnnouncementApproveForm(forms.ModelForm):
+    class Meta:
+        model = Announcement
+        fields = ('status', 'publicated_at')

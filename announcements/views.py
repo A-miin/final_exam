@@ -14,7 +14,7 @@ from django.db.models import Q
 from django.views import View
 from django.utils.http import urlencode
 import uuid
-from announcements.form import SearchForm, AnnouncementForm
+from announcements.form import SearchForm, AnnouncementForm, AnnouncementApproveForm
 from announcements.models import Announcement
 
 # Create your views here.
@@ -35,7 +35,7 @@ class IndexView(ListView):
 
     def get_queryset(self):
         queryset = super().get_queryset()
-        queryset = queryset.filter(status='Publicated')
+        queryset = queryset.filter(Q(status='Publicated') & Q(is_active=True))
 
         if self.search_data:
             queryset = queryset.filter(
@@ -63,6 +63,19 @@ class AnnouncementView(DetailView):
     template_name = 'announcement_detail.html'
     context_object_name = 'announcement'
 
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        queryset = queryset.filter(Q(status='Publicated') & Q(is_active=True))
+        return queryset
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        if self.object.author == self.request.user:
+            context['is_author'] = True
+
+        return context
+
 
 class CreateAnnouncementView(LoginRequiredMixin, CreateView):
     template_name = 'new_announcements.html'
@@ -76,7 +89,11 @@ class CreateAnnouncementView(LoginRequiredMixin, CreateView):
 
         return redirect('annoncement:index')
 
-class ReviewAnnouncementView(ListView):
+class ReviewAnnouncementView(PermissionRequiredMixin, ListView):
+
+    def has_permission(self):
+        return self.request.user.is_staff
+
 
     template_name = 'review.html'
     model = Announcement
@@ -93,7 +110,7 @@ class ReviewAnnouncementView(ListView):
 
     def get_queryset(self):
         queryset = super().get_queryset()
-        queryset = queryset.filter(status='For moderation')
+        queryset = queryset.filter(Q(status='For moderation') & Q(is_active=True))
 
         if self.search_data:
             queryset = queryset.filter(
@@ -115,3 +132,36 @@ class ReviewAnnouncementView(ListView):
             context['query'] = urlencode({'search_value': self.search_data})
 
         return context
+
+class AnnouncementUpdateView(PermissionRequiredMixin, DetailView):
+    model = Announcement
+    template_name = 'announcement_approve.html'
+    context_object_name = 'announcement'
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        queryset = queryset.filter(Q(status='Publicated') & Q(is_active=True))
+        return queryset
+
+    def has_permission(self):
+        return self.request.user.is_staff
+
+class AnnouncementDeleteView(PermissionRequiredMixin, DeleteView):
+    model = Announcement
+    template_name = 'delete.html'
+    success_url = reverse_lazy('annoncement:index')
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        queryset = queryset.filter(Q(status='Publicated') & Q(is_active=True))
+        return queryset
+
+    def has_permission(self):
+        return self.get_object().author == self.request.user
+
+    def delete(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        self.object.is_active = False
+        self.object.save()
+
+        return redirect('annoncement:index')

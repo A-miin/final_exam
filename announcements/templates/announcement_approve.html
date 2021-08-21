@@ -2,17 +2,6 @@
 {% load static %}
 
 {% block page_header %}Список всех объявлений{% endblock %}
-{% block nav %}
-{% if is_author %}
-    <li class="nav-item">
-        <a class="nav-link active" href="{% url "annoncement:announcement-review" %}">Редактировать</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link text-danger" href="{% url "annoncement:announcement-delete"  announcement.id %}">Удалить</a>
-    </li>
-
-{% endif %}
-{% endblock nav %}
 {% block content %}
     <div class="card mb-3" >
       <div class="row g-0">
@@ -28,7 +17,13 @@
             {% endif %}
             <p class="card-text"><small class="text-muted">{{ announcement.publicated_at }}</small></p>
           </div>
+          <div>
+            <a type="button" class="btn btn-outline-success">Одобрить</a>
+            <a type="button" class="btn btn-outline-danger">Отклонить</a>
+          </div>
         </div>
       </div>
+
+
     </div>
 {% endblock content %}

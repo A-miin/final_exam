@@ -8,8 +8,12 @@
           <div class="card-body">
             <h3 class="card-text">{{ announcement.title }}</h3>
           </div>
+            {% if detail %}
           <a href="{% url 'annoncement:announcement-detail' announcement.id %}" type="button" class="btn btn-outline-primary ml-0 pl-0 mt-auto pt-auto">Детальный просмотр</a>
-
+            {% endif %}
+            {% if approve %}
+          <a href="{% url 'annoncement:announcement-review-detail' announcement.id %}" type="button" class="btn btn-outline-primary ml-0 pl-0 mt-auto pt-auto">Просмотр</a>
+            {% endif %}
         </div>
       </div>
 

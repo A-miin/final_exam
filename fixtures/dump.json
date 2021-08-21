@@ -1,0 +1,269 @@
+[
+{
+  "model": "announcements.category",
+  "pk": 1,
+  "fields": {
+    "name": "еда"
+  }
+},
+{
+  "model": "announcements.category",
+  "pk": 2,
+  "fields": {
+    "name": "недвижимость"
+  }
+},
+{
+  "model": "announcements.category",
+  "pk": 3,
+  "fields": {
+    "name": "прочее"
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 1,
+  "fields": {
+    "title": "Вкусное мясо в Бишкеке - Доставка Бесплатно! Grill.kg",
+    "text": "Вкусное мясо в собственном соку\r\nСоус, гарнир, доставка и разделка – Бесплатно!\r\n\r\nКозу-гриль\r\nИндюк-гриль\r\nКозу-кебаб\r\nТаш-кордо\r\nРыба-гриль\r\nКурица-гриль\r\n\r\nНа мероприятия и банкеты от 10 до 60 человек\r\n\r\n- Собственное производство\r\n- Бесплатная доставка\r\n- Авторский рецепт\r\n- Сертификат «Халал»\r\n\r\nЗаказывайте на дом\r\nДоставка Бесплатно\r\n\r\nНаши контакты:\r\nг. Бишкек, ул. Садырбаева 127\r\n+996(705)48-48-48",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T04:40:17.255Z",
+    "updated_at": "2021-08-21T04:40:17.255Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 2,
+  "fields": {
+    "title": "Продаётся новый 2 этажный дом под псо. ж/м Арча бешик",
+    "text": "Продаётся 2 этажный дом под псо\r\n\r\nКоличество комнат : 5\r\n\r\nГод постройки : 2018\r\n\r\nПлощадь : 200 м2\r\n\r\nУчасток : 4 соток\r\n\r\nж/м Арча бешик. ул. Кара кужур\r\n\r\n1 этаж : зал 43м?, кухня24м?, топкапы 5м?, лестничная площадка 14м?\r\n\r\n2 этаж : 3 спальни 16м?, 15м?, 14.5м?, зал24м?, с/у5м?\r\n\r\nКоммуникации : Электричество, газ, канализация, водоснабжение, 3 фазка\r\n\r\nГотовая кухня. окна пластик ( золотой дуб ). крыша утепленный пеной нтэк. кухня панорам окна, топкапы, ванна чугун, аристон ( 100 л )\r\n\r\nВ шаговой доступности : гипермаркет фрунзе, баня Сумбуль, Газпром спорт зал, гом, поликлиника, 79 школа, садик\r\n\r\n200 метров от магистрали\r\n\r\nТел.линия, акнет\r\n\r\nОсвещение до южной магистрали\r\n\r\nМожно под бизнес\r\n\r\nОчень хорошие соседи\r\n\r\nЦена 90 000 $. Торг уместен\r\n\r\nРассматриваем обмен на равноценную элитную квартиру псо\r\n\r\nСсылка на карту : https://go.2gis.com/l7n6w\r\n\r\nТел/Whats app : 0705 277 062\r\n\r\nТел/Whats app : 0700 987 789",
+    "picture": "pictures/91ee4fa5ebdc51ea5c4d39d5355ef092.jpeg",
+    "category": 2,
+    "price": null,
+    "author": 3,
+    "publicated_at": null,
+    "created_at": "2021-08-21T04:41:02.462Z",
+    "updated_at": "2021-08-21T04:41:02.462Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 3,
+  "fields": {
+    "title": "В связи с отъездом срочно продается 4 комнатный дом",
+    "text": "В связи с отъездом срочно продается 4 комнатный дом\r\n\r\nАдрес : ул. Тоголок-Молдо-Саадаева\r\n\r\nПлощадь :120 м2\r\n\r\nУчасток : 9\r\n\r\nКоммуникации : Газ, отопление (твердое топливо и газ), электричество, центральный водопровод\r\n\r\nВозможность постройки еще одного дома\r\n\r\nЧастично с мебелью, евро забор, видеонаблюдение, бассейн, баня, спутниковая антенна\r\n\r\nБольшая кухня, крытый большой навес на несколько машин, утепленный, декоративный прудик, авто яма, большой огород, клумба с цветами, решетки на окнах,\r\n\r\nРядом аптеки, магазины, оптовый овощной рынок, строительный рынок\"\r\n\r\nЦена 49 000$\r\n\r\nТел : 0 555 159 706",
+    "picture": "pictures/3caedff3711e649e05774ba8cf278f1b.jpeg",
+    "category": 2,
+    "price": null,
+    "author": 3,
+    "publicated_at": null,
+    "created_at": "2021-08-21T04:41:56.935Z",
+    "updated_at": "2021-08-21T04:41:56.935Z",
+    "status": "Publicated",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 4,
+  "fields": {
+    "title": "Продаются 2 участка под бизнес. Село Ивановка",
+    "text": "Продаются 2 участка под бизнес\r\n\r\nНа 1 участке жилой дом из 4 комнат\r\n\r\nНа 2 втором участке времянка\r\n\r\nОбщая площадь участков 18 соток\r\n\r\nУчастки огорожены\r\n\r\nАдрес : Ыссык-Атинский район. Село Ивановка. ул.Ильина 41 ( Трасса Бишкек-Токмок, по центральной дороге )\r\n\r\nКрасная книга. Электричество. Скважина. Колонка\r\n\r\nРассматриваем продажу участков вместе так же раздельно\r\n\r\nЦена 33000 $ за 2 участка. Торг обязателен\r\n\r\nТел : 0557 650 476\r\n\r\nWhats app : 0557 650 476",
+    "picture": "pictures/08f864de052dd14fcde3c065a95796ea.jpeg",
+    "category": 2,
+    "price": null,
+    "author": 3,
+    "publicated_at": null,
+    "created_at": "2021-08-21T04:43:01.330Z",
+    "updated_at": "2021-08-21T04:43:01.330Z",
+    "status": "Rejected",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 5,
+  "fields": {
+    "title": "Сауна \"Паровоз\". ул.Жукеева Пудовкина 34",
+    "text": "Сауна \"ПАРО-ВОЗ\"\r\nТурецкий хамам\r\nРусская парная на дровах\r\nОткрытый бассейн с подогревом\r\nБильярд\r\nБарбекю\r\nДомашняя кухня\r\nПрофессиональное караоке\r\nул.Жукеева Пудовкина,34\r\nтел: 0999443333",
+    "picture": "pictures/457454f498905dc8e05756a2eb906ae6.jpg",
+    "category": 3,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T04:43:34.902Z",
+    "updated_at": "2021-08-21T04:43:34.902Z",
+    "status": "Publicated",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 6,
+  "fields": {
+    "title": "Соусы для всех. Майонез, томат, уксус, кетчуп, консервированная п",
+    "text": "PANDA EXPRESS\r\nСоусы для всех\r\nОптом и в розницу\r\nДоставка 24/7\r\n\r\nОт производителя\r\n\r\nМайонез 30%, 50%, 60% жирности.\r\nВ наличии в 10 кг вёдрах и 5 кг бутылках\r\nМайонез \"Нежный\" 100 и 180 гр\r\n\r\nКетчуп шашлычный для кафе, ресторанов и фаст-фудов\r\n\r\nТоматная паста 25% в пакетах по 5кг для кафе и столовых\r\nТоматная паста \"Супер соус\" 250,400 и 900 гр в стеклянных банках 25%\r\nОптом Томатная паста 38% в металлических бочках по 240 кг\r\nТоматная паста \"Чуйская\" 250 гр в стеклянных банках\r\nТоматная паста \"Асель\" 25% в стеклянных банках, натуральная\r\n\r\nАджика для кафе и ресторанов\r\nАджика \"Домашняя\"\r\nНатуральная перцовая паста, острая\r\nЛаза 250 гр\r\nПерец \"Хлопенья\" - острый, маринованный\r\nКонсервированные чесночные стрелки (стеклянные банки по 900 гр)",
+    "picture": "pictures/ab212f85066c1b4c54a7088a17868d4a.jpeg",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T04:44:29.913Z",
+    "updated_at": "2021-08-21T04:44:29.913Z",
+    "status": "Rejected",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 7,
+  "fields": {
+    "title": "Продаю кирпичный дом, с.Лебединовка с ремонтом.",
+    "text": "Продаю кирпичный дом, с.Лебединовка с ремонтом. 90 м2. 3 комнаты + летняя кухня + баня. Хоз.постройки. Сан.узел в доме. С мебелью. Общая площадь 8 соток. Красная книга. Большой сад.\r\nЦена: 80000 $. Торг.\r\nТел: 0550403445, 0700403445",
+    "picture": "pictures/dea36128ba7ebb491bf1d71b222c311d.jpeg",
+    "category": 2,
+    "price": 80000,
+    "author": 3,
+    "publicated_at": null,
+    "created_at": "2021-08-21T04:45:43.184Z",
+    "updated_at": "2021-08-21T04:45:43.184Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 8,
+  "fields": {
+    "title": "Ремонт бытовой техники: кондиционеров, стиральных машин, холодиль",
+    "text": "Galanz service\r\n\r\nРемонт, установка, профилактика, чистка, заправка, продажа\r\nКондиционеров всех марок и моделей.\r\nРемонт вентиляции\r\n\r\nРемонт:\r\nХолодильников\r\nВодонагревателей\r\nСтиральных машин\r\n\r\nНаш адрес:\r\nул.Кулатова,12\r\nтел: 0700 75 22 11, 0555 11 33 22, 0312 88 88 05\r\nсайт: www.technikabishkek.kg",
+    "picture": "pictures/038901582df61b6971a60a04a577f8d4.jpg",
+    "category": 3,
+    "price": 1500,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T04:46:12.539Z",
+    "updated_at": "2021-08-21T04:46:12.539Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 9,
+  "fields": {
+    "title": "Качественное и безопасное уничтожение насекомых, грызунов.",
+    "text": "ЧП КАШКИН\r\nЕвропейские технологии уничтожения тараканов и грызунов в Бишкеке.\r\nПолное избавление от домашних паразитов от 1600 сом!\r\n\r\nНаши услуги:\r\n- Дезинсекция - уничтожение насекомых, клопов и блох\r\n- Дератизация - уничтожение грызунов и тараканов.\r\n- Дезинфекция помещений\r\n\r\nПроцесс занимает не более 1 часа.\r\nОбработка проводится разными видами оборудования\r\n(холодный туман, микродисперстное распыление, гелевая обработка, горячий туман и тп). Технология крайне эффективна и безопасна, не оставляет пятен и следов.\r\n\r\n- Безопасность\r\n-Конфиденциальность\r\n-Низкие цены\r\n-100% Гарантия до 6 месяцев!\r\n-25 лет успешной работы на рынке.\r\n-Выезд в любое время\r\n\r\nОкончательные цены на разные виды услуг уточняйте по телефонам:\r\n0500 503 643, 0312 463 905, 0772 503 643\r\nСайт: http://kashkin.pro\r\nИнстаграм: kashkin_desinfection\r\nhttps://www.instagram.com/kashkin_desinfection/",
+    "picture": "pictures/257800892d99eec87238ce0cd98d45fe.jpg",
+    "category": 3,
+    "price": 1500,
+    "author": 3,
+    "publicated_at": null,
+    "created_at": "2021-08-21T04:46:42.569Z",
+    "updated_at": "2021-08-21T04:46:42.569Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 10,
+  "fields": {
+    "title": "Сдаю 5-комнатную квартиру, Восток-5 по пр.Чуй, 600 $, б/п",
+    "text": "Сдаю 5-комнатную квартиру, Восток-5 по пр.Чуй, 600 $, б/п\r\n\r\nПлощадь - 100 кв.м, 1-й этаж из 9\r\n\r\nЕвроремонт. Все центральные коммуникации\r\n\r\nМебель + бытовая техника. Все удобства\r\n\r\nНа длительный срок!\r\n\r\n\r\n\r\nТелефон: 0555 065064, 0702 351146",
+    "picture": "pictures/c39c7ae67d482528c4a3a55e8f3a285e.jpg",
+    "category": 2,
+    "price": null,
+    "author": 3,
+    "publicated_at": null,
+    "created_at": "2021-08-21T04:47:09.683Z",
+    "updated_at": "2021-08-21T04:47:09.683Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$d95yDGHgDRjNE8iSRCBM75$8KjuJSDUvtDO3QtseoNTqdGEciPGpA1RTNft4RAjRHg=",
+    "last_login": "2021-08-21T04:39:43.569Z",
+    "is_superuser": true,
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-08-21T04:34:15.859Z",
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "phone_number": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$bSlIzzHdC8Nez5FyBSrCso$1eqUxUjJHoYUIsXS5BuPjuGsrG2IbYokscpZ2qBKmXE=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-08-21T04:34:48Z",
+    "username": "user1",
+    "first_name": "Ivan1",
+    "last_name": "Ivanov1",
+    "phone_number": "+996512317711",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$W8b3SfOvJLHUDCRx3MjPjo$zBcJC7SnK0HPjhysj6+OfqTjW+chqej1x3asnGKv0XI=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-08-21T04:35:53Z",
+    "username": "user2",
+    "first_name": "Ivan2",
+    "last_name": "Ivanov2",
+    "phone_number": "+996512317712",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$KYLZtVapAi0cgaAVvs0RJB$N6wpJ741DQOg9rXWeC/UEenMo2YQIgWM/2rUuHNs8NY=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-08-21T04:36:16Z",
+    "username": "moder",
+    "first_name": "moder",
+    "last_name": "moder",
+    "phone_number": "+996512317710",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

@@ -4,6 +4,7 @@
 {% block page_header %}Профиль{% endblock %}
 
 {% block content %}
+     {% include "partial/search_form.html" %}
     <div class="card w-100">
       <div class="card-body">
         <h5 class="card-title">{{ user_obj.first_name }}</h5>
@@ -14,5 +15,10 @@
           {% endif %}
       </div>
     {% include 'partial/announcement_list.html' with announcements=announcements detail=True%}
+        <div class="container d-flex align-content-center flex-wrap my-4">
+        {% if is_paginated %}
+            {% include 'partial/paginate.html' %}
+        {% endif %}
+    </div>
     </div>
 {% endblock content %}

@@ -10,7 +10,7 @@
         <p class="card-text">Фамилия: {{ user_obj.last_name }}</p>
         <p class="card-text">Номер телефона: {{ user_obj.phone_number }}</p>
           {% if user_obj == user %}
-        <a href="#" class="btn btn-primary">Редактировать</a>
+        <a href="{% url 'accounts:update' %}" class="btn btn-primary">Редактировать</a>
           {% endif %}
       </div>
     {% include 'partial/announcement_list.html' with announcements=announcements detail=True%}

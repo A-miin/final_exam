@@ -123,7 +123,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
-
+PHONENUMBER_DEFAULT_REGION = 'KG'
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'

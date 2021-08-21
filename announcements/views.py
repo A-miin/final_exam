@@ -60,10 +60,14 @@ class AnnouncementView(DetailView):
     template_name = 'announcement_detail.html'
     context_object_name = 'announcement'
 
-    def get_queryset(self):
-        queryset = super().get_queryset()
-        queryset = queryset.filter(Q(status='Publicated') & Q(is_active=True))
-        return queryset
+    # def get_queryset(self):
+    #     queryset = super().get_queryset()
+    #     announcement = self.get_object()
+    #     if announcement.author == self.request.user:
+    #         queryset = queryset.filter(is_active=True)
+    #     else:
+    #         queryset = queryset.filter(Q(status='Publicated') & Q(is_active=True))
+    #     return queryset
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

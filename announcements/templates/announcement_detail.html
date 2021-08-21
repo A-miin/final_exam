@@ -4,9 +4,11 @@
 {% block page_header %}Список всех объявлений{% endblock %}
 {% block nav %}
 {% if is_author %}
-    <li class="nav-item">
-        <a class="nav-link active" href="{% url "annoncement:announcement-update"  announcement.id %}">Редактировать</a>
-    </li>
+    {% if announcement.status != 'Rejected'%}
+        <li class="nav-item">
+            <a class="nav-link active" href="{% url "annoncement:announcement-update"  announcement.id %}">Редактировать</a>
+        </li>
+    {% endif %}
     <li class="nav-item">
         <a class="nav-link text-danger" href="{% url "annoncement:announcement-delete"  announcement.id %}">Удалить</a>
     </li>
@@ -22,6 +24,7 @@
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title">{{ announcement.title }}</h5>
+            <h3 class="card-title">Автор: <a href="{% url "accounts:profile" announcement.author.id %}"> {{ announcement.author }}</a></h3>
             <p class="card-text">{{ announcement.text }}</p>
            {% if announcement.price %}
             <p class="h6">Цена: {{ announcement.price }}</p>

@@ -17,38 +17,44 @@ class Category(models.Model):
                             blank=False,
                             verbose_name=_('Название'))
 
+    class Meta:
+        db_table = 'categories'
+        verbose_name = _('Категория')
+        verbose_name_plural = _('Категории')
+
+    def __str__(self):
+        return f'{self.id}. {self.name}'
+
 class Announcement(models.Model):
     title = models.CharField(
         max_length=128,
-        null=True,
-        blank=True,
         verbose_name=_('Заголовок'))
 
     text = models.TextField(max_length=1024,
-                            null=True,
-                            blank=True,
                             verbose_name=_('Текст объявления'))
 
     picture = models.ImageField(upload_to='pictures/',
-                                null=True,
-                                blank=True,
                                 verbose_name=_('Картинка'))
 
     category = models.ForeignKey('Category',
                                  on_delete=models.CASCADE,
-                                 null=True,
-                                 blank=True,
                                  related_name='announcements',
                                  verbose_name=_('Категория'))
-    price = models.PositiveIntegerField(verbose_name=_('Цена'))
+
+    price = models.PositiveIntegerField(null=True,
+                                        blank=True,
+                                        verbose_name=_('Цена'))
 
     author = models.ForeignKey(get_user_model(),
                                on_delete=models.CASCADE,
                                related_name='announcements')
 
+    publicated_at = models.DateTimeField(null=True,
+                                         blank=True,
+                                         verbose_name=_('Дата публикации'))
+
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    publicated_at = models.DateTimeField(verbose_name=_('Дата публикации'))
     status = models.CharField(max_length=128, choices=ANNONCEMENT_STATUS, default='For moderation')
     is_active = models.BooleanField(default=True)
 
@@ -78,9 +84,10 @@ class Comment(models.Model):
 
     author = models.ForeignKey(
         get_user_model(),
-        on_delete=models.SET_NULL,
-        null=True,
-        related_name='comments')
+        on_delete=models.CASCADE,
+        related_name='comments',
+        null=False,
+        blank=False)
 
     created_at = models.DateTimeField(auto_now_add=True)
 

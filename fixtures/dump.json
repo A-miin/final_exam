@@ -61,13 +61,13 @@
     "title": "В связи с отъездом срочно продается 4 комнатный дом",
     "text": "В связи с отъездом срочно продается 4 комнатный дом\r\n\r\nАдрес : ул. Тоголок-Молдо-Саадаева\r\n\r\nПлощадь :120 м2\r\n\r\nУчасток : 9\r\n\r\nКоммуникации : Газ, отопление (твердое топливо и газ), электричество, центральный водопровод\r\n\r\nВозможность постройки еще одного дома\r\n\r\nЧастично с мебелью, евро забор, видеонаблюдение, бассейн, баня, спутниковая антенна\r\n\r\nБольшая кухня, крытый большой навес на несколько машин, утепленный, декоративный прудик, авто яма, большой огород, клумба с цветами, решетки на окнах,\r\n\r\nРядом аптеки, магазины, оптовый овощной рынок, строительный рынок\"\r\n\r\nЦена 49 000$\r\n\r\nТел : 0 555 159 706",
     "picture": "pictures/3caedff3711e649e05774ba8cf278f1b.jpeg",
-    "category": 2,
-    "price": null,
+    "category": 3,
+    "price": 20000,
     "author": 3,
     "publicated_at": null,
     "created_at": "2021-08-21T04:41:56.935Z",
-    "updated_at": "2021-08-21T04:41:56.935Z",
-    "status": "Publicated",
+    "updated_at": "2021-08-21T08:47:41.592Z",
+    "status": "For moderation",
     "is_active": true
   }
 },
@@ -191,11 +191,436 @@
   }
 },
 {
+  "model": "announcements.announcement",
+  "pk": 11,
+  "fields": {
+    "title": "new1vlkgmnlkwb",
+    "text": "new1",
+    "picture": "pictures/08f864de052dd14fcde3c065a95796ea_aBKjsnO.jpeg",
+    "category": 2,
+    "price": 15000,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:28:52.039Z",
+    "updated_at": "2021-08-21T08:11:33.902Z",
+    "status": "Publicated",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 12,
+  "fields": {
+    "title": "Title0",
+    "text": "text0",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:38:05.354Z",
+    "updated_at": "2021-08-21T05:38:05.354Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 13,
+  "fields": {
+    "title": "Title1",
+    "text": "text1",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:38:05.440Z",
+    "updated_at": "2021-08-21T05:38:05.440Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 14,
+  "fields": {
+    "title": "Title2",
+    "text": "text2",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:38:05.519Z",
+    "updated_at": "2021-08-21T05:38:05.519Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 15,
+  "fields": {
+    "title": "Title3",
+    "text": "text3",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:38:05.598Z",
+    "updated_at": "2021-08-21T05:38:05.598Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 16,
+  "fields": {
+    "title": "Title4",
+    "text": "text4",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:38:05.673Z",
+    "updated_at": "2021-08-21T05:38:05.673Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 17,
+  "fields": {
+    "title": "Title5",
+    "text": "text5",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:38:05.762Z",
+    "updated_at": "2021-08-21T05:38:05.762Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 18,
+  "fields": {
+    "title": "Title6",
+    "text": "text6",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:38:05.842Z",
+    "updated_at": "2021-08-21T05:38:05.842Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 19,
+  "fields": {
+    "title": "Title7",
+    "text": "text7",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:38:05.952Z",
+    "updated_at": "2021-08-21T05:38:05.952Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 20,
+  "fields": {
+    "title": "Title8",
+    "text": "text8",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:38:06.039Z",
+    "updated_at": "2021-08-21T05:38:06.039Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 21,
+  "fields": {
+    "title": "Title9",
+    "text": "text9",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:38:06.117Z",
+    "updated_at": "2021-08-21T05:38:06.117Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 22,
+  "fields": {
+    "title": "Title10",
+    "text": "text10",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:39:35.008Z",
+    "updated_at": "2021-08-21T05:39:35.008Z",
+    "status": "Publicated",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 23,
+  "fields": {
+    "title": "Title11",
+    "text": "text11",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:39:35.101Z",
+    "updated_at": "2021-08-21T05:39:35.101Z",
+    "status": "Publicated",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 24,
+  "fields": {
+    "title": "Title12",
+    "text": "text12",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:39:35.190Z",
+    "updated_at": "2021-08-21T05:39:35.190Z",
+    "status": "Publicated",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 25,
+  "fields": {
+    "title": "Title13",
+    "text": "text13",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:39:35.257Z",
+    "updated_at": "2021-08-21T05:39:35.257Z",
+    "status": "Publicated",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 26,
+  "fields": {
+    "title": "Title14",
+    "text": "text145242",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:39:35.325Z",
+    "updated_at": "2021-08-21T08:50:07.439Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 27,
+  "fields": {
+    "title": "Title15",
+    "text": "text15",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 2,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:39:35.412Z",
+    "updated_at": "2021-08-21T08:49:58.460Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 28,
+  "fields": {
+    "title": "Titl",
+    "text": "text16 newwwwww",
+    "picture": "pictures/3caedff3711e649e05774ba8cf278f1b_fHLAIhl.jpeg",
+    "category": 2,
+    "price": 2000,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:39:35.492Z",
+    "updated_at": "2021-08-21T08:21:38.226Z",
+    "status": "Publicated",
+    "is_active": false
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 29,
+  "fields": {
+    "title": "Title17",
+    "text": "text17",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:39:35.589Z",
+    "updated_at": "2021-08-21T08:04:33.669Z",
+    "status": "Publicated",
+    "is_active": false
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 30,
+  "fields": {
+    "title": "Title18",
+    "text": "text18",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:39:35.681Z",
+    "updated_at": "2021-08-21T07:54:24.951Z",
+    "status": "Publicated",
+    "is_active": false
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 31,
+  "fields": {
+    "title": "Title19",
+    "text": "text19",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c.png",
+    "category": 1,
+    "price": null,
+    "author": 2,
+    "publicated_at": null,
+    "created_at": "2021-08-21T05:39:35.770Z",
+    "updated_at": "2021-08-21T07:51:34.500Z",
+    "status": "Publicated",
+    "is_active": false
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 32,
+  "fields": {
+    "title": "Sulayman Too",
+    "text": "вицыатиыцтаытцт",
+    "picture": "pictures/91ee4fa5ebdc51ea5c4d39d5355ef092_nQq3V46.jpeg",
+    "category": 2,
+    "price": null,
+    "author": 1,
+    "publicated_at": null,
+    "created_at": "2021-08-21T06:35:02.899Z",
+    "updated_at": "2021-08-21T06:35:02.899Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 33,
+  "fields": {
+    "title": "Sulayman Too",
+    "text": "вицыатиыцтаытцт",
+    "picture": "pictures/91ee4fa5ebdc51ea5c4d39d5355ef092_luszRFg.jpeg",
+    "category": 2,
+    "price": null,
+    "author": 1,
+    "publicated_at": null,
+    "created_at": "2021-08-21T06:36:05.655Z",
+    "updated_at": "2021-08-21T06:36:05.655Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 34,
+  "fields": {
+    "title": "Sulayman Too111",
+    "text": "эшщэгщээщ",
+    "picture": "pictures/bf07a38ca8e7705eb365258f0207500c_gGJes82.png",
+    "category": 2,
+    "price": 2543,
+    "author": 1,
+    "publicated_at": null,
+    "created_at": "2021-08-21T06:36:34.621Z",
+    "updated_at": "2021-08-21T06:36:34.621Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
+  "model": "announcements.announcement",
+  "pk": 35,
+  "fields": {
+    "title": "Sulayman Too222",
+    "text": "юбобюоаб",
+    "picture": "pictures/3caedff3711e649e05774ba8cf278f1b_lssxJSN.jpeg",
+    "category": 2,
+    "price": null,
+    "author": 1,
+    "publicated_at": null,
+    "created_at": "2021-08-21T06:37:22.581Z",
+    "updated_at": "2021-08-21T06:37:22.581Z",
+    "status": "For moderation",
+    "is_active": true
+  }
+},
+{
   "model": "accounts.user",
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$260000$d95yDGHgDRjNE8iSRCBM75$8KjuJSDUvtDO3QtseoNTqdGEciPGpA1RTNft4RAjRHg=",
-    "last_login": "2021-08-21T04:39:43.569Z",
+    "last_login": "2021-08-21T08:17:08.380Z",
     "is_superuser": true,
     "email": "",
     "is_staff": true,
@@ -214,7 +639,7 @@
   "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$260000$bSlIzzHdC8Nez5FyBSrCso$1eqUxUjJHoYUIsXS5BuPjuGsrG2IbYokscpZ2qBKmXE=",
-    "last_login": null,
+    "last_login": "2021-08-21T08:49:51.514Z",
     "is_superuser": false,
     "email": "",
     "is_staff": false,
@@ -233,7 +658,7 @@
   "pk": 3,
   "fields": {
     "password": "pbkdf2_sha256$260000$W8b3SfOvJLHUDCRx3MjPjo$zBcJC7SnK0HPjhysj6+OfqTjW+chqej1x3asnGKv0XI=",
-    "last_login": null,
+    "last_login": "2021-08-21T08:43:09.669Z",
     "is_superuser": false,
     "email": "",
     "is_staff": false,
@@ -252,10 +677,10 @@
   "pk": 4,
   "fields": {
     "password": "pbkdf2_sha256$260000$KYLZtVapAi0cgaAVvs0RJB$N6wpJ741DQOg9rXWeC/UEenMo2YQIgWM/2rUuHNs8NY=",
-    "last_login": null,
+    "last_login": "2021-08-21T08:50:59.663Z",
     "is_superuser": false,
     "email": "",
-    "is_staff": false,
+    "is_staff": true,
     "is_active": true,
     "date_joined": "2021-08-21T04:36:16Z",
     "username": "moder",

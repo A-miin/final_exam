@@ -1,7 +1,6 @@
-from django.shortcuts import render
+
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
-from django.core.exceptions import PermissionDenied
-from django.shortcuts import redirect, get_object_or_404, render
+from django.shortcuts import redirect
 from django.views.generic import (
     ListView,
     CreateView,
@@ -11,9 +10,7 @@ from django.views.generic import (
 )
 from django.urls import reverse, reverse_lazy
 from django.db.models import Q
-from django.views import View
 from django.utils.http import urlencode
-import uuid
 from announcements.form import SearchForm, AnnouncementForm, AnnouncementUpdateForm
 from announcements.models import Announcement
 
@@ -140,7 +137,7 @@ class AnnouncementApproveView(PermissionRequiredMixin, DetailView):
 
     def get_queryset(self):
         queryset = super().get_queryset()
-        queryset = queryset.filter(Q(status='Publicated') & Q(is_active=True))
+        queryset = queryset.filter(Q(status='For moderation') & Q(is_active=True))
         return queryset
 
     def has_permission(self):
@@ -180,6 +177,9 @@ class AnnouncementUpdateView(PermissionRequiredMixin, UpdateView):
     def has_permission(self):
         return self.get_object().author == self.request.user
 
-    def get_success_url(self):
-        return reverse('annoncement:announcement-detail', kwargs={'pk': self.kwargs.get('pk')})
+    def form_valid(self, form):
+        announcement = form.save(commit=False)
+        announcement.status = 'For moderation'
+        announcement.save()
+        return redirect('annoncement:index')
 

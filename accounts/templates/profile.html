@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}Профиль{% endblock %}
+
+{% block content %}
+    <div class="card w-100">
+      <div class="card-body">
+        <h5 class="card-title">{{ user_obj.first_name }}</h5>
+        <p class="card-text">Фамилия: {{ user_obj.last_name }}</p>
+        <p class="card-text">Номер телефона: {{ user_obj.phone_number }}</p>
+          {% if user_obj == user %}
+        <a href="#" class="btn btn-primary">Редактировать</a>
+          {% endif %}
+      </div>
+    {% include 'partial/announcement_list.html' with announcements=announcements detail=True%}
+    </div>
+{% endblock content %}

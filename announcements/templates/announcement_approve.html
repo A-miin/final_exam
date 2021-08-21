@@ -18,12 +18,43 @@
             <p class="card-text"><small class="text-muted">{{ announcement.publicated_at }}</small></p>
           </div>
           <div>
-            <a type="button" class="btn btn-outline-success">Одобрить</a>
-            <a type="button" class="btn btn-outline-danger">Отклонить</a>
+            <a type="button" class="btn btn-outline-success" id="approve_btn">Одобрить</a>
+            <a type="button" class="btn btn-outline-danger" id="reject_btn">Отклонить</a>
           </div>
         </div>
       </div>
 
 
     </div>
+    <script>
+    $("#approve_btn").click(function (event) {
+        event.preventDefault();
+        $.ajax({
+   url: 'http://localhost:8000/api/announcement/{{ announcement.id }}/',
+   type: 'POST',
+   success: function(response) {
+     alert("Объявление успешно одобрено!");
+    window.location.replace("http://localhost:8000/{{ announcement.id }}");
+   },
+   error: function (response){
+       alert("Случилась ошибка ;(");
+   }
+})
+
+        })
+    $("#reject_btn").click(function (event) {
+        event.preventDefault();
+        $.ajax({
+   url: 'http://localhost:8000/api/announcement/{{ announcement.id }}/',
+   type: 'DELETE',
+   success: function(response) {
+     alert("Объявление успешно отклонено!");
+    window.location.replace("http://localhost:8000/moderator/");
+   },
+   error: function (response){
+       alert("Случилась ошибка ;(");
+   }
+});
+        })
+    </script>
 {% endblock content %}

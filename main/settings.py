@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'announcements',
 
     #     lib apps
+    'rest_framework',
     'phonenumber_field',
 
 ]

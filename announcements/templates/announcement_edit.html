@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+    <li class="nav-item">
+    <a class="nav-link active" href="{% url "annoncement:announcement-detail" announcement.id %}">Вернуться</a>
+  </li>
+{% endblock nav %}
+{% block page_header %}Редактирвоать объявление {{ article.id }}{% endblock page_header %}
+
+{% block content %}
+    <form action="{% url "annoncement:announcement-update" announcement.id %}" method="post" enctype="multipart/form-data">
+        {% include "partial/form.html" with button_text="Редактировать объявление" %}
+    </form>
+{% endblock content %}

@@ -14,3 +14,8 @@ class AnnouncementApproveForm(forms.ModelForm):
     class Meta:
         model = Announcement
         fields = ('status', 'publicated_at')
+
+class AnnouncementUpdateForm(forms.ModelForm):
+    class Meta:
+        model = Announcement
+        fields = ('title','text','category','picture','price')

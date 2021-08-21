@@ -14,7 +14,7 @@ from django.db.models import Q
 from django.views import View
 from django.utils.http import urlencode
 import uuid
-from announcements.form import SearchForm, AnnouncementForm, AnnouncementApproveForm
+from announcements.form import SearchForm, AnnouncementForm, AnnouncementUpdateForm
 from announcements.models import Announcement
 
 # Create your views here.
@@ -133,7 +133,7 @@ class ReviewAnnouncementView(PermissionRequiredMixin, ListView):
 
         return context
 
-class AnnouncementUpdateView(PermissionRequiredMixin, DetailView):
+class AnnouncementApproveView(PermissionRequiredMixin, DetailView):
     model = Announcement
     template_name = 'announcement_approve.html'
     context_object_name = 'announcement'
@@ -165,3 +165,21 @@ class AnnouncementDeleteView(PermissionRequiredMixin, DeleteView):
         self.object.save()
 
         return redirect('annoncement:index')
+
+class AnnouncementUpdateView(PermissionRequiredMixin, UpdateView):
+    model = Announcement
+    template_name = 'announcement_edit.html'
+    context_object_name = 'announcement'
+    form_class = AnnouncementUpdateForm
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        queryset = queryset.filter(Q(status='Publicated') & Q(is_active=True))
+        return queryset
+
+    def has_permission(self):
+        return self.get_object().author == self.request.user
+
+    def get_success_url(self):
+        return reverse('annoncement:announcement-detail', kwargs={'pk': self.kwargs.get('pk')})
+
